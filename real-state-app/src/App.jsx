@@ -1,13 +1,3 @@
-/**
- * App Component
- * 
- * Main application entry point with:
- * - React Router for navigation
- * - FavouritesProvider context
- * - Header with navigation
- * - All page routes
- */
-
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { FavouritesProvider } from './context/FavouritesContext';
@@ -16,14 +6,12 @@ import SearchPage from './pages/SearchPage';
 import PropertyPage from './pages/PropertyPage';
 import Footer from './components/Footer';
 
-/**
- * Header component with navigation - Rightmove Replica
- */
+// Header component with navigation hooks
 function Header() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Close menu when route changes
+  // Close mobile menu on route change
   useEffect(() => {
     setIsMenuOpen(false);
   }, [location]);
@@ -36,9 +24,9 @@ function Header() {
           <span className="header__logo-icon">🏠</span>
         </Link>
 
-        {/* Desktop Navigation with Dropdowns */}
+        {/* Desktop Navigation */}
         <nav className="header__nav" aria-label="Main navigation">
-          {/* Buy Dropdown */}
+
           <div className="header__nav-item">
             <Link to="/search" className="header__nav-link">Buy</Link>
             <div className="header__dropdown">
@@ -47,7 +35,6 @@ function Header() {
             </div>
           </div>
 
-          {/* Rent Dropdown */}
           <div className="header__nav-item">
             <Link to="/search" className="header__nav-link">Rent</Link>
             <div className="header__dropdown">
@@ -56,7 +43,6 @@ function Header() {
             </div>
           </div>
 
-          {/* House Prices Dropdown */}
           <div className="header__nav-item">
             <Link to="/search" className="header__nav-link">House Prices</Link>
             <div className="header__dropdown">
@@ -65,7 +51,6 @@ function Header() {
             </div>
           </div>
 
-          {/* Find Agent Dropdown */}
           <div className="header__nav-item">
             <Link to="/search" className="header__nav-link">Find Agent</Link>
             <div className="header__dropdown">
@@ -74,7 +59,6 @@ function Header() {
             </div>
           </div>
 
-          {/* Commercial Dropdown */}
           <div className="header__nav-item">
             <Link to="/search" className="header__nav-link">Commercial</Link>
             <div className="header__dropdown">
@@ -83,7 +67,6 @@ function Header() {
             </div>
           </div>
 
-          {/* Inspire Dropdown */}
           <div className="header__nav-item">
             <Link to="/search" className="header__nav-link">Inspire</Link>
             <div className="header__dropdown">
@@ -92,7 +75,6 @@ function Header() {
             </div>
           </div>
 
-          {/* Overseas Dropdown */}
           <div className="header__nav-item">
             <Link to="/search" className="header__nav-link">Overseas</Link>
             <div className="header__dropdown">
@@ -109,7 +91,7 @@ function Header() {
             </button>
           </div>
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Toggle */}
           <button
             className="header__mobile-toggle"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -121,7 +103,7 @@ function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Navigation */}
       {isMenuOpen && (
         <nav className="header__mobile-menu">
           <Link to="/search" className="header__mobile-link">Buy</Link>
@@ -139,9 +121,7 @@ function Header() {
   );
 }
 
-/**
- * AppContent - Routes and layout
- */
+// Layout wrapper to handle conditional rendering
 function AppContent() {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
@@ -166,9 +146,7 @@ function AppContent() {
   );
 }
 
-/**
- * App - Main component with providers
- */
+// Root Application Component
 function App() {
   return (
     <FavouritesProvider>

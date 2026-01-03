@@ -1,8 +1,4 @@
-/**
- * Jest setup file
- * Configures testing library and global mocks
- */
-
+// Jest setup and mocks
 import '@testing-library/jest-dom';
 
 // Mock localStorage
@@ -16,13 +12,12 @@ Object.defineProperty(window, 'localStorage', {
   value: localStorageMock,
 });
 
-// Mock scrollTo
+// Mock browser APIs
 window.scrollTo = jest.fn();
 
-// Mock ResizeObserver
 class ResizeObserverMock {
-  observe() {}
-  unobserve() {}
-  disconnect() {}
+  observe() { }
+  unobserve() { }
+  disconnect() { }
 }
 window.ResizeObserver = ResizeObserverMock;

@@ -1,28 +1,12 @@
-/**
- * FavouritesContext - Manages favourite properties state
- * 
- * Features:
- * - Add/remove properties from favourites
- * - Prevent duplicate additions
- * - Persist to localStorage
- * - Clear all favourites
- */
-
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
-// Create context for favourites management
+// Context for managing favourite properties
 const FavouritesContext = createContext(null);
-
-// LocalStorage key for persistence
 const STORAGE_KEY = 'propertyFinder_favourites';
 
-/**
- * FavouritesProvider - Wraps app to provide favourites state
- * @param {Object} props - Component props
- * @param {React.ReactNode} props.children - Child components
- */
+// Provider component to wrap the app
 export function FavouritesProvider({ children }) {
-  // Initialize state from localStorage
+  // Load initial state from localStorage
   const [favourites, setFavourites] = useState(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -32,7 +16,7 @@ export function FavouritesProvider({ children }) {
     }
   });
 
-  // Persist to localStorage on changes
+  // Sync favourites to localStorage
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(favourites));
@@ -41,15 +25,10 @@ export function FavouritesProvider({ children }) {
     }
   }, [favourites]);
 
-  /**
-   * Add a property to favourites (prevents duplicates)
-   * @param {Object} property - Property object to add
-   * @returns {boolean} - True if added, false if already exists
-   */
+  // Add property if not already favourited
   const addFavourite = useCallback((property) => {
     let added = false;
     setFavourites((prev) => {
-      // Check for duplicate
       if (prev.some((fav) => fav.id === property.id)) {
         return prev;
       }
@@ -59,35 +38,22 @@ export function FavouritesProvider({ children }) {
     return added;
   }, []);
 
-  /**
-   * Remove a property from favourites
-   * @param {string} propertyId - ID of property to remove
-   */
+  // Remove property from favourites
   const removeFavourite = useCallback((propertyId) => {
     setFavourites((prev) => prev.filter((fav) => fav.id !== propertyId));
   }, []);
 
-  /**
-   * Check if a property is in favourites
-   * @param {string} propertyId - ID of property to check
-   * @returns {boolean} - True if favourited
-   */
+  // Check if a property is favourited
   const isFavourite = useCallback((propertyId) => {
     return favourites.some((fav) => fav.id === propertyId);
   }, [favourites]);
 
-  /**
-   * Clear all favourites
-   */
+  // Clear all favourites
   const clearFavourites = useCallback(() => {
     setFavourites([]);
   }, []);
 
-  /**
-   * Reorder favourites (for drag-and-drop)
-   * @param {number} fromIndex - Original index
-   * @param {number} toIndex - New index
-   */
+  // Reorder favourites (used for drag-and-drop)
   const reorderFavourites = useCallback((fromIndex, toIndex) => {
     setFavourites((prev) => {
       const result = Array.from(prev);
@@ -114,11 +80,7 @@ export function FavouritesProvider({ children }) {
   );
 }
 
-/**
- * Hook to access favourites context
- * @returns {Object} Favourites context value
- * @throws {Error} If used outside FavouritesProvider
- */
+// Custom hook to use the context
 export function useFavourites() {
   const context = useContext(FavouritesContext);
   if (!context) {

@@ -1,16 +1,12 @@
-/* ============================================
-   PropertyFinder - Rightmove-Inspired Styles
-   ============================================ */
-
-/* ---------- CSS Custom Properties ---------- */
+/* Global Variables */
 :root {
-  /* Rightmove Colors */
+  /* Brand Colors */
   --color-primary: #00ADB5;
   --color-primary-dark: #009BA3;
   --color-navy: #262A56;
   --color-navy-light: #3d4373;
 
-  /* Neutral Colors */
+  /* Neutrals */
   --color-white: #ffffff;
   --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
@@ -23,14 +19,14 @@
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
 
-  /* Semantic */
+  /* Status */
   --color-error: #ef4444;
   --color-success: #10b981;
 
   /* Typography */
   --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
-  /* Spacing */
+  /* Spacing System */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -39,7 +35,7 @@
   --space-6: 1.5rem;
   --space-8: 2rem;
 
-  /* Borders & Shadows */
+  /* UI Elements */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
@@ -47,12 +43,12 @@
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
 
-  /* Layout */
+  /* Dimensions */
   --header-height: 60px;
   --sidebar-width: 300px;
 }
 
-/* ---------- Base Reset ---------- */
+/* Base Reset */
 *,
 *::before,
 *::after {
@@ -88,9 +84,7 @@ button {
   font-family: inherit;
 }
 
-
-
-/* ---------- Header (Rightmove Replica) ---------- */
+/* Header */
 .header {
   position: fixed;
   top: 0;
@@ -139,7 +133,6 @@ button {
   gap: 0;
 }
 
-/* Nav item wrapper for dropdown */
 .header__nav-item {
   position: relative;
 }
@@ -160,7 +153,7 @@ button {
   color: var(--color-primary);
 }
 
-/* Dropdown Menu */
+/* Navigation Dropdown */
 .header__dropdown {
   position: absolute;
   top: 100%;
@@ -178,7 +171,6 @@ button {
   z-index: 1000;
 }
 
-/* Show dropdown on hover */
 .header__nav-item:hover .header__dropdown {
   opacity: 1;
   visibility: visible;
@@ -223,7 +215,7 @@ button {
   color: white;
 }
 
-/* ---------- App Layout ---------- */
+/* Layout */
 .app {
   min-height: 100vh;
 }
@@ -235,7 +227,7 @@ button {
   margin: 0 auto;
 }
 
-/* ---------- Search Page ---------- */
+/* Search Page Layout */
 .search-page {
   display: grid;
   grid-template-columns: 1fr var(--sidebar-width);
@@ -252,7 +244,7 @@ button {
   height: fit-content;
 }
 
-/* ---------- Search Form (Modern White Card) ---------- */
+/* Search Form Card */
 .search-form {
   background: white;
   border-radius: var(--radius-lg);
@@ -261,7 +253,6 @@ button {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   border-top: 4px solid var(--color-primary);
   border: 1px solid var(--color-gray-100);
-  border-top-width: 4px;
 }
 
 .search-form__title {
@@ -308,7 +299,7 @@ button {
   border-top: 1px solid var(--color-gray-100);
 }
 
-/* Form Inputs */
+/* Inputs */
 .form-input {
   width: 100%;
   padding: var(--space-3);
@@ -331,7 +322,7 @@ button {
   color: var(--color-gray-400);
 }
 
-/* React Select Overrides */
+/* React Select Customization */
 .react-select__control {
   border-radius: var(--radius-md) !important;
   min-height: 42px !important;
@@ -357,7 +348,7 @@ button {
   font-weight: 500;
 }
 
-/* DatePicker */
+/* DatePicker Customization */
 .react-datepicker-wrapper {
   width: 100%;
 }
@@ -380,7 +371,7 @@ button {
   box-shadow: 0 0 0 4px rgba(0, 173, 181, 0.1);
 }
 
-/* ---------- Buttons ---------- */
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -427,7 +418,7 @@ button {
   transform: translateY(-2px);
 }
 
-/* ---------- Results Header ---------- */
+/* Results Section */
 .results-header {
   display: flex;
   align-items: center;
@@ -448,7 +439,7 @@ button {
   font-size: 14px;
 }
 
-/* ---------- Property Grid ---------- */
+/* Property List */
 .property-grid {
   display: flex;
   flex-direction: column;
@@ -468,7 +459,7 @@ button {
   margin-bottom: var(--space-3);
 }
 
-/* ---------- Property Card (Rightmove Style) ---------- */
+/* Property Card */
 .property-card {
   background: white;
   border-radius: var(--radius-md);
@@ -598,7 +589,7 @@ button {
   margin-top: var(--space-3);
 }
 
-/* ---------- Favourites Panel (Sidebar) ---------- */
+/* Favourites Sidebar */
 .favourites-panel {
   background: white;
   border-radius: var(--radius-md);
@@ -714,7 +705,7 @@ button {
   color: var(--color-error);
 }
 
-/* ---------- Property Page ---------- */
+/* Property Detail Page */
 .property-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -741,7 +732,7 @@ button {
   gap: var(--space-6);
 }
 
-/* ---------- Property Gallery ---------- */
+/* Gallery */
 .property-gallery {
   margin-bottom: var(--space-4);
 }

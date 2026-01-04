@@ -1,0 +1,235 @@
+{
+    "properties": [
+        {
+            "id": "prop-001",
+            "type": "house",
+            "price": 450000,
+            "bedrooms": 4,
+            "bathrooms": 2,
+            "dateAdded": "2025-12-01",
+            "postcode": "BR1",
+            "address": "42 Victoria Road, Bromley, BR1 3PH",
+            "shortDescription": "Stunning 4 bedroom detached family home with garden",
+            "longDescription": "This exceptional four-bedroom detached house offers generous living space across two floors. The ground floor features a spacious entrance hall, bright living room with bay window, separate dining room, and a modern fitted kitchen with breakfast area leading to the rear garden. Upstairs you'll find four well-proportioned bedrooms, the master with en-suite, and a family bathroom. Additional highlights include a landscaped rear garden, driveway parking, garage, and gas central heating throughout. Located in a sought-after residential area with excellent transport links.",
+            "images": [
+                "/images/prop-001-1.jpg",
+                "/images/prop-001-2.jpg",
+                "/images/prop-001-3.jpg",
+                "/images/prop-001-4.jpg",
+                "/images/prop-001-5.jpg",
+                "/images/prop-001-6.jpg",
+                "/images/prop-001-7.jpg"
+            ],
+            "floorPlan": "/images/prop-001-plan.png",
+            "coordinates": {
+                "lat": 51.4055,
+                "lng": 0.0146
+            }
+        },
+        {
+            "id": "prop-002",
+            "type": "flat",
+            "price": 275000,
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "dateAdded": "2025-11-15",
+            "postcode": "NW1",
+            "address": "Flat 15, Camden Heights, Camden, NW1 8AB",
+            "shortDescription": "Modern 2 bedroom flat in heart of Camden",
+            "longDescription": "A stylish two-bedroom apartment situated in a popular Camden development. This property boasts a contemporary open-plan living and kitchen area with integrated appliances, two double bedrooms with built-in wardrobes, and a sleek bathroom with walk-in shower. Enjoy views over the city from the private balcony. The building offers secure entry, lift access, and allocated parking. Perfectly positioned for Camden Town tube station, vibrant local markets, restaurants, and Regent's Park nearby.",
+            "images": [
+                "/images/prop-002-1.jpg",
+                "/images/prop-002-2.jpg",
+                "/images/prop-002-3.jpg",
+                "/images/prop-002-4.jpg",
+                "/images/prop-002-5.jpg",
+                "/images/prop-002-6.jpg"
+            ],
+            "floorPlan": "/images/prop-002-plan.png",
+            "coordinates": {
+                "lat": 51.5392,
+                "lng": -0.1426
+            }
+        },
+        {
+            "id": "prop-003",
+            "type": "house",
+            "price": 850000,
+            "bedrooms": 5,
+            "bathrooms": 3,
+            "dateAdded": "2025-10-20",
+            "postcode": "SW1",
+            "address": "18 Belgrave Square, Westminster, SW1X 8PG",
+            "shortDescription": "Elegant 5 bedroom Georgian townhouse in prestigious location",
+            "longDescription": "An impressive five-bedroom Georgian townhouse located in one of London's most prestigious addresses. This Grade II listed property has been carefully restored to combine period features with modern luxury. Spread over five floors, the home includes three reception rooms, a chef's kitchen with scullery, five bedrooms - three with en-suite bathrooms, wine cellar, and private courtyard garden. Original features include ornate cornicing, marble fireplaces, and sash windows. Benefits from excellent local amenities, parks, and world-class shopping.",
+            "images": [
+                "/images/prop-003-1.jpg",
+                "/images/prop-003-2.jpg",
+                "/images/prop-003-3.jpg",
+                "/images/prop-003-4.jpg"
+            ],
+            "floorPlan": "/images/prop-003-plan.png",
+            "coordinates": {
+                "lat": 51.4994,
+                "lng": -0.1526
+            }
+        },
+        {
+            "id": "prop-004",
+            "type": "flat",
+            "price": 195000,
+            "bedrooms": 1,
+            "bathrooms": 1,
+            "dateAdded": "2025-12-15",
+            "postcode": "E1",
+            "address": "Flat 8, Shoreditch Lofts, Whitechapel, E1 7QR",
+            "shortDescription": "Trendy 1 bedroom warehouse conversion in Shoreditch",
+            "longDescription": "A fantastic one-bedroom apartment in a converted Victorian warehouse, showcasing industrial chic at its finest. The property features exposed brickwork, high ceilings with original beams, and polished concrete floors. The open-plan living space flows into a designer kitchen with breakfast bar. The generous bedroom accommodates king-size furniture with ample storage. A contemporary bathroom completes this urban retreat. Located in the creative heart of Shoreditch with cafes, galleries, and nightlife on your doorstep. Liverpool Street station is a short walk away.",
+            "images": [
+                "/images/prop-004-1.jpg",
+                "/images/prop-004-2.jpg",
+                "/images/prop-004-3.jpg"
+            ],
+            "floorPlan": "/images/prop-004-plan.png",
+            "coordinates": {
+                "lat": 51.5194,
+                "lng": -0.0715
+            }
+        },
+        {
+            "id": "prop-005",
+            "type": "house",
+            "price": 325000,
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "dateAdded": "2025-09-01",
+            "postcode": "SE1",
+            "address": "27 Tower Bridge Road, Southwark, SE1 4TW",
+            "shortDescription": "Charming 3 bedroom Victorian terrace near Tower Bridge",
+            "longDescription": "A beautifully presented three-bedroom Victorian terraced house in a convenient Southwark location. The property retains many original features including wooden floorboards, ceiling roses, and a cast iron fireplace. Ground floor comprises entrance hallway, double reception room, and extended kitchen-diner with doors to the private garden. Three bedrooms and a bathroom are located on the first floor. Excellent local amenities include Borough Market, Bermondsey Street restaurants, and several tube stations. Ideal for families and young professionals.",
+            "images": [
+                "/images/prop-005-1.jpg",
+                "/images/prop-005-2.jpg",
+                "/images/prop-005-3.jpg"
+            ],
+            "floorPlan": "/images/prop-005-plan.png",
+            "coordinates": {
+                "lat": 51.5045,
+                "lng": -0.0788
+            }
+        },
+        {
+            "id": "prop-006",
+            "type": "flat",
+            "price": 420000,
+            "bedrooms": 2,
+            "bathrooms": 2,
+            "dateAdded": "2025-11-01",
+            "postcode": "W1",
+            "address": "Apt 42, Mayfair Residences, Mayfair, W1K 3LR",
+            "shortDescription": "Luxury 2 bedroom apartment in exclusive Mayfair",
+            "longDescription": "An exceptional two-bedroom luxury apartment within a prestigious Mayfair development offering five-star hotel-style living. This corner unit features floor-to-ceiling windows flooding the space with natural light, bespoke joinery throughout, and premium finishes including marble bathrooms with underfloor heating. The building provides 24-hour concierge, private gym, spa facilities, and residents' lounge. Located moments from Hyde Park, Bond Street shopping, and Michelin-starred dining. A rare opportunity in one of the world's most desirable addresses.",
+            "images": [
+                "/images/prop-006-1.jpg",
+                "/images/prop-006-2.jpg",
+                "/images/prop-006-3.jpg"
+            ],
+            "floorPlan": "/images/prop-006-plan.png",
+            "coordinates": {
+                "lat": 51.5107,
+                "lng": -0.1478
+            }
+        },
+        {
+            "id": "prop-007",
+            "type": "house",
+            "price": 575000,
+            "bedrooms": 4,
+            "bathrooms": 2,
+            "dateAdded": "2025-12-20",
+            "postcode": "N1",
+            "address": "15 Islington Green, Islington, N1 2XD",
+            "shortDescription": "Stunning 4 bedroom semi-detached with modern extension",
+            "longDescription": "A beautifully renovated four-bedroom semi-detached family home featuring a stunning contemporary rear extension. The ground floor offers a formal living room, home office, and an impressive open-plan kitchen-dining-family space with bi-fold doors opening onto a landscaped south-facing garden. The first floor houses four bedrooms including a master suite with walk-in wardrobe and designer en-suite. Additional features include underfloor heating, smart home technology, EV charging point, and high-end fixtures throughout. Outstanding local schools and excellent transport connections.",
+            "images": [
+                "/images/prop-007-1.jpg",
+                "/images/prop-007-2.jpg",
+                "/images/prop-007-3.jpg"
+            ],
+            "floorPlan": "/images/prop-007-plan.png",
+            "coordinates": {
+                "lat": 51.5362,
+                "lng": -0.1033
+            }
+        },
+        {
+            "id": "prop-008",
+            "type": "flat",
+            "price": 310000,
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "dateAdded": "2025-12-28",
+            "postcode": "E14",
+            "address": "Apartment 7, Canary Wharf View, E14 9GJ",
+            "shortDescription": "Modern 2 bed apartment with river views",
+            "longDescription": "A spectacular two-bedroom apartment located in the heart of Canary Wharf. This property features floor-to-ceiling windows with breathtaking views of the River Thames. The open-plan living area includes a high-spec kitchen with stone worktops. Both bedrooms are doubles, with the master benefiting from a built-in wardrobe. Residents enjoy access to a swimming pool, gym, and 24-hour concierge service. Excellent transport links via the Elizabeth Line and DLR.",
+            "images": [
+                "/images/prop-002-1.jpg",
+                "/images/prop-002-2.jpg",
+                "/images/prop-002-3.jpg",
+                "/images/prop-002-4.jpg"
+            ],
+            "floorPlan": "/images/prop-008-plan.png",
+            "coordinates": {
+                "lat": 51.5035,
+                "lng": -0.0191
+            }
+        },
+        {
+            "id": "prop-009",
+            "type": "house",
+            "price": 650000,
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "dateAdded": "2025-11-05",
+            "postcode": "SW19",
+            "address": "22 Wimbledon Village, Wimbledon, SW19 5BY",
+            "shortDescription": "Charming 4 bed detached house in Wimbledon Village",
+            "longDescription": "A rare opportunity to acquire a four-bedroom detached period property in the heart of Wimbledon Village. This home exudes character with its original fireplaces, high ceilings, and wooden flooring. The ground floor offers a formal reception room, study, and expansive kitchen/diner leading to a secluded garden. Upstairs calls for four generous bedrooms and two bathrooms. Driveway parking for two cars. Moments from the Common and exclusive boutiques.",
+            "images": [
+                "/images/prop-001-1.jpg",
+                "/images/prop-001-2.jpg",
+                "/images/prop-001-3.jpg",
+                "/images/prop-001-4.jpg"
+            ],
+            "floorPlan": "/images/prop-009-plan.png",
+            "coordinates": {
+                "lat": 51.4285,
+                "lng": -0.2198
+            }
+        },
+        {
+            "id": "prop-010",
+            "type": "flat",
+            "price": 550000,
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "dateAdded": "2025-12-10",
+            "postcode": "W2",
+            "address": "Flat 3, Hyde Park Gardens, Paddington, W2 2LU",
+            "shortDescription": "Luxury 3 bed flat moments from Hyde Park",
+            "longDescription": "Situated in a prestigious stucco-fronted building, this three-bedroom apartment offers elegant living space with direct access to communal gardens. The property comprises a grand reception room with high ceilings, a separate modern kitchen, three bedrooms (one en-suite), and a family bathroom. The apartment has been recently refurbished to a high standard with hardwood floors throughout. Lancaster Gate tube station and the open spaces of Hyde Park are just a short stroll away.",
+            "images": [
+                "/images/prop-006-1.jpg",
+                "/images/prop-006-2.jpg",
+                "/images/prop-006-3.jpg",
+                "/images/prop-006-plan.jpg"
+            ],
+            "floorPlan": "/images/prop-010-plan.png",
+            "coordinates": {
+                "lat": 51.5130,
+                "lng": -0.1745
+            }
+        }
+    ]
+}

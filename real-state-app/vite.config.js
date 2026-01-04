@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/Real-state-web/',
   server: {
     host: true,
     port: 5173, // Default port or change as needed

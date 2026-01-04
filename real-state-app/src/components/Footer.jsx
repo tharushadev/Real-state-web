@@ -7,7 +7,7 @@ function Footer() {
             <div className="footer__content">
                 <div className="footer__columns">
                     <div className="footer__column">
-                        <h5 className="footer__heading">Rightmove</h5>
+                        <h5 className="footer__heading">PropX</h5>
                         <ul className="footer__links">
                             <li><Link to="/search">About</Link></li>
                             <li><Link to="/search">Press centre</Link></li>
@@ -57,7 +57,7 @@ function Footer() {
                     <div className="footer__column">
                         <h5 className="footer__heading">Professional</h5>
                         <div className="footer__pro-link">
-                            <Link to="/search" className="btn btn--primary btn--sm">Rightmove Plus</Link>
+                            <Link to="/search" className="btn btn--primary btn--sm">PropX Plus</Link>
                         </div>
                         <ul className="footer__links">
                             <li><Link to="/search">Data Services</Link></li>
@@ -70,10 +70,10 @@ function Footer() {
 
                 <div className="footer__bottom">
                     <div className="footer__copyright">
-                        <p>Copyright © 2026 Rightmoveplaces Limited. All rights reserved.</p>
+                        <p>Copyright © 2026 PropXplaces Limited. All rights reserved.</p>
                     </div>
                     <div className="footer__social">
-                        <span>Rightmove.co.uk is the UK's number one property website</span>
+                        <span>PropX.co.uk is the UK's number one property website</span>
                     </div>
                 </div>
             </div>

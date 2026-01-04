@@ -1,6 +1,6 @@
 # PropertyFinder - React Property Search Application
 
-A Rightmove-inspired property search web application built with React, demonstrating modern frontend development practices.
+A PropX-inspired property search web application built with React, demonstrating modern frontend development practices.
 
 ## 🏠 Features
 
@@ -147,7 +147,7 @@ npm run deploy
 - ✅ Remove favourites (drag, button, clear)
 - ✅ Favourites displayed on search page
 - ✅ Responsive design with media queries
-- ✅ Rightmove-style aesthetics
+- ✅ PropX-style aesthetics
 - ✅ CSP and JSX security measures
 - ✅ 30+ Jest tests
 
